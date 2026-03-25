@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cory Clemens Insurance – Independent Broker Comparison Guide | Risk Advisory Evaluation</title>
+    <meta name="description" content="Independent guide for businesses evaluating Cory Clemens and Clemens Agency Insurance. Learn what questions to ask any broker and how true risk advisors differ from commodity insurance agents.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --color-primary: #21808d;
+            --color-primary-dark: #1d7480;
+            --color-primary-light: #32a6b8;
+            --color-bg: #ffffff;
+            --color-bg-alt: #f8fafc;
+            --color-text: #0f172a;
+            --color-text-secondary: #475569;
+            --color-text-muted: #64748b;
+            --color-border: #e2e8f0;
+            --color-warning: #fef3c7;
+            --color-warning-border: #fbbf24;
+            --color-success: #d1fae5;
+            --color-success-border: #10b981;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header/Hero */
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--color-primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(33, 128, 141, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: white;
+            color: var(--color-primary);
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: transparent;
+            color: white;
+        }
+        
+        /* Disclaimer */
+        .disclaimer {
+            background-color: var(--color-warning);
+            border: 2px solid var(--color-warning-border);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+        
+        .disclaimer strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        
+        /* Section Styling */
+        section {
+            margin-bottom: 60px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--color-primary);
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            color: var(--color-text-secondary);
+            font-size: 1.05rem;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+            color: var(--color-text-secondary);
+        }
+        
+        li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+        
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;
+        }
+        
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .comparison-table th {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 16px;
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .comparison-table .question-col {
+            font-weight: 600;
+            width: 30%;
+            background-color: var(--color-bg-alt);
+        }
+        
+        .comparison-table .commodity-col {
+            background-color: #fef2f2;
+            width: 35%;
+        }
+        
+        .comparison-table .advisor-col {
+            background-color: var(--color-success);
+            width: 35%;
+        }
+        
+        /* Card Styling */
+        .card {
+            background-color: var(--color-bg-alt);
+            border-radius: 8px;
+            padding: 30px;
+            margin: 20px 0;
+            border-left: 4px solid var(--color-primary);
+        }
+        
+        .card-highlight {
+            background-color: var(--color-success);
+            border-left-color: var(--color-success-border);
+        }
+        
+        /* Red/Green Flags */
+        .flags {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .flag-box {
+            padding: 25px;
+            border-radius: 8px;
+        }
+        
+        .red-flags {
+            background-color: #fef2f2;
+            border: 2px solid #ef4444;
+        }
+        
+        .green-flags {
+            background-color: var(--color-success);
+            border: 2px solid var(--color-success-border);
+        }
+        
+        .flag-box h3 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Case Study */
+        .case-study {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+        
+        .case-study h3 {
+            color: var(--color-primary-light);
+        }
+        
+        .case-study .results {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .case-study ul {
+            color: rgba(255, 255, 255, 0.95);
+        }
+        
+        /* Checklist */
+        .checklist {
+            background-color: var(--color-bg-alt);
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .checklist ol {
+            counter-reset: item;
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .checklist ol li {
+            counter-increment: item;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+            font-weight: 500;
+        }
+        
+        .checklist ol li::before {
+            content: counter(item);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: var(--color-primary);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 60px 0;
+        }
+        
+        .cta-section h2 {
+            border: none;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .market-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .market-btn {
+            background-color: white;
+            color: var(--color-primary);
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
+        
+        .market-btn:hover {
+            background-color: transparent;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-item h3 {
+            color: var(--color-primary);
+            margin-top: 0;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #0f172a;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 60px 20px 30px;
+            margin-top: 80px;
+        }
+        
+        .footer-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .footer-disclaimer {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+        }
+        
+        .footer-contacts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-contacts h4 {
+            color: var(--color-primary-light);
+            margin-bottom: 15px;
+        }
+        
+        .footer-legal {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .flags {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-table {
+                overflow-x: auto;
+            }
+            
+            .footer-contacts {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-group {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>Before You Renew with Cory Clemens at Clemens Agency Insurance, Ask These 5 Questions</h1>
+            <p>An independent guide to evaluating any commercial insurance broker—including Clemens Agency—from a competing risk advisory firm that believes you deserve better than commodity insurance.</p>
+            <div class="cta-group">
+                <a href="#contact" class="btn btn-primary">Get Your Free TCOR Audit</a>
+                <a href="#evaluation" class="btn btn-secondary">Download 7-Question Guide</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="container">
+        <div class="disclaimer">
+            <strong>⚠️ Transparency Notice:</strong>
+            This website is operated by a competing insurance brokerage. We are not affiliated with Cory Clemens or Clemens Agency Insurance. Our goal is to help you evaluate your broker based on objective risk management criteria.
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- Who This Site Is For -->
+        <section id="who">
+            <h2>Who This Site Is For</h2>
+            <p>You landed on this page because you searched for <strong>Cory Clemens</strong> or <strong>Clemens Agency Insurance</strong>. You're either:</p>
+            <ul>
+                <li>A current client evaluating whether to stay</li>
+                <li>A prospect considering Clemens Agency Insurance for your business insurance</li>
+                <li>Researching alternatives to your current broker</li>
+            </ul>
+            <p><strong>We're a competing insurance brokerage in the Des Moines Metro area.</strong> We work with commercial insurance clients paying $100,000+ in annual premiums.</p>
+            <p>This page isn't a hit piece. It's a <strong>decision framework</strong> to help you evaluate <em>any</em> broker—including us—based on what actually matters: <strong>who owns your total cost of risk.</strong></p>
+            <div class="card">
+                <p><strong>Bottom line:</strong> If Cory Clemens or Clemens Agency Insurance delivers what we describe below, you're in good hands. If not, we should talk.</p>
+            </div>
+        </section>
+
+        <!-- Commodity vs Risk Advisor -->
+        <section id="comparison">
+            <h2>Commodity Broker vs. Risk Advisor: What's the Difference?</h2>
+            <p>Most business owners think insurance brokers are interchangeable. They're not. There are two models:</p>
+            <ol>
+                <li><strong>Commodity Brokers:</strong> Focus on price shopping and policy placement</li>
+                <li><strong>Risk Advisors:</strong> Own your Total Cost of Risk (TCOR) and drive measurable reductions</li>
+            </ol>
+            <p>Here's how to tell which one you have:</p>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Question to Ask Your Broker</th>
+                            <th>Commodity Broker Answer</th>
+                            <th>Risk Advisor Answer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="question-col">"Who owns my total cost of risk?"</td>
+                            <td class="commodity-col">"We'll shop the market and find you a better rate."</td>
+                            <td class="advisor-col">"I do. Here's your written TCOR plan with measurable targets and quarterly reviews."</td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">"How do you reduce claims frequency and severity?"</td>
+                            <td class="commodity-col">"We work with carriers that offer loss control services."</td>
+                            <td class="advisor-col">"Here's your 12-month risk control calendar with implementation support and accountability metrics."</td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">"What's your 3-year strategy for my insurance program?"</td>
+                            <td class="commodity-col">"Let's get through this renewal first."</td>
+                            <td class="advisor-col">"Here's a multi-year roadmap aligned to your business growth, margin targets, and risk appetite."</td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">"What's my current experience mod and what's driving it?"</td>
+                            <td class="commodity-col">"It's on your policy. Carriers calculate that."</td>
+                            <td class="advisor-col">"Your mod is X.XX. Here's the breakdown by claim type, and here's our plan to improve it by Y% over Z years."</td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">"When do I hear from you?"</td>
+                            <td class="commodity-col">"About 60 days before renewal with quotes."</td>
+                            <td class="advisor-col">"Monthly or quarterly touchpoints, annual TCOR review, real-time claims consultation."</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="card card-highlight">
+                <p><strong>Key Insight:</strong> If your current broker—whether it's Clemens Agency Insurance, Cory Clemens, or anyone else—operates in the left column, <strong>you're being treated like a transaction, not a partner.</strong></p>
+                <p>The right column is the standard we hold ourselves to as a true risk advisory firm. It's also the standard you should demand from any broker charging you six figures in premium.</p>
+            </div>
+        </section>
+
+        <!-- TCOR Explanation -->
+        <section id="tcor">
+            <h2>What Is Total Cost of Risk (TCOR)?</h2>
+            <p>Your insurance premium is only <strong>one piece</strong> of your true risk cost. Most brokers never quantify the rest.</p>
+            
+            <div class="card">
+                <h3>TCOR Calculation:</h3>
+                <p style="font-size: 1.1rem; font-weight: 600; text-align: center; margin: 20px 0;">
+                    TCOR is calculated by combining insurance premiums + retained losses + administrative burden + indirect risk costs using our proprietary assessment framework
+                </p>
+            </div>
+            
+            <h3>What's Included:</h3>
+            <ul>
+                <li><strong>Insurance Premiums:</strong> What you pay carriers annually</li>
+                <li><strong>Retained Losses:</strong> Deductibles and out-of-pocket claim expenses</li>
+                <li><strong>Hidden Costs:</strong> The financial impact most brokers never quantify—productivity loss, operational disruption, and opportunity costs that compound over time</li>
+            </ul>
+            
+            <div class="card card-highlight">
+                <h3>Why It Matters:</h3>
+                <p>A broker who focuses only on premium is optimizing 25-40% of your total risk cost. A <strong>risk advisor</strong> owns the entire number and drives it down year-over-year through structured risk control, claims management, and strategic planning.</p>
+                <p><strong>Question for Your Current Broker:</strong> "Can you show me my TCOR calculation for the last three years, and what specific actions you've taken to reduce it?"</p>
+                <p style="margin-bottom: 0;"><em>If the answer is no, you don't have a risk advisor. You have a policy salesperson.</em></p>
+            </div>
+        </section>
+
+        <!-- Red Flags / Green Flags -->
+        <section id="flags">
+            <h2>Red Flags: When to Question Your Broker</h2>
+            
+            <div class="flags">
+                <div class="flag-box red-flags">
+                    <h3>🚩 Red Flags</h3>
+                    <ul>
+                        <li>You only hear from your broker 60-90 days before renewal</li>
+                        <li>Conversations focus exclusively on premium and "market conditions"</li>
+                        <li>Your broker has never quantified your total cost of risk</li>
+                        <li>You've had the same experience mod for 3+ years with no improvement plan</li>
+                        <li>Claims are handled reactively with no root-cause analysis</li>
+                        <li>You don't have a written risk management plan</li>
+                        <li>Your broker doesn't ask about your business goals or growth plans</li>
+                    </ul>
+                </div>
+                
+                <div class="flag-box green-flags">
+                    <h3>✅ Green Flags</h3>
+                    <ul>
+                        <li>Documented TCOR calculation and year-over-year tracking</li>
+                        <li>Proactive risk control calendar with measurable outcomes</li>
+                        <li>Quarterly business reviews (not just renewal meetings)</li>
+                        <li>Experience mod management with specific improvement targets</li>
+                        <li>Claims consultation within 24 hours of any incident</li>
+                        <li>Multi-year insurance strategy aligned to business objectives</li>
+                        <li>Direct access to broker year-round</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p style="text-align: center; font-size: 1.1rem; margin-top: 30px;">If Cory Clemens or Clemens Agency Insurance delivers the green flags, you're in excellent hands. If you're experiencing the red flags, it's time for a second opinion.</p>
+        </section>
+
+        <!-- Case Study -->
+        <section id="case-study">
+            <h2>Case Study: What Risk Advisory Looks Like in Action</h2>
+            
+            <div class="case-study">
+                <h3>Client Profile</h3>
+                <ul>
+                    <li><strong>Industry:</strong> Mid-size contractor, Des Moines Metro</li>
+                    <li><strong>Annual Premium:</strong> $280,000 (Workers' Comp, General Liability, Auto, Umbrella)</li>
+                    <li><strong>Starting Experience Mod:</strong> 1.34 (34% penalty on WC premium)</li>
+                </ul>
+                
+                <h3>The Problem</h3>
+                <p>Previous broker (commodity model) provided quotes annually but no structured loss control. Client accepted high mod as "the cost of doing business in construction." Claims were managed reactively through carrier adjusters with no broker involvement.</p>
+                
+                <h3>Risk Advisory Approach</h3>
+                <ol>
+                    <li><strong>TCOR Audit:</strong> Documented full cost structure including $340K in retained losses and indirect costs—actual TCOR was $620K, not $280K premium</li>
+                    <li><strong>Experience Mod Analysis:</strong> Identified top claim drivers (falls from elevation, struck-by incidents, vehicle accidents)</li>
+                    <li><strong>12-Month Risk Control Plan:</strong> Monthly safety toolbox talks, fall protection certification for crew leads, MVR monitoring and driver training, quarterly safety audits</li>
+                    <li><strong>Claims Management Protocol:</strong> 24-hour claim reporting to broker, root cause analysis on every incident, return-to-work program</li>
+                    <li><strong>Quarterly Business Reviews:</strong> Tracked TCOR trend, claim frequency, and mod projection</li>
+                </ol>
+                
+                <div class="results">
+                    <h3>Results After 3 Years:</h3>
+                    <ul>
+                        <li>Experience mod reduced from 1.34 to 0.97 (3% credit)</li>
+                        <li>WC premium decreased $68,000 annually despite 15% payroll growth</li>
+                        <li>Total claims reduced 62% (frequency and severity)</li>
+                        <li>Estimated TCOR reduction: $180,000+ per year</li>
+                        <li>Client expanded operations into two new states using our multi-state compliance framework</li>
+                    </ul>
+                </div>
+                
+                <p style="margin-top: 20px;"><strong>The Difference:</strong> This client didn't need cheaper insurance. They needed a partner who <strong>owned their risk outcomes</strong>. That's the model we operate under at Risk Advisors of Iowa and McDade Insurance.</p>
+                <p><strong>Ask your current broker:</strong> "Can you show me results like this for any of your clients?"</p>
+            </div>
+        </section>
+
+        <!-- Evaluation Checklist -->
+        <section id="evaluation">
+            <h2>How to Evaluate Cory Clemens or Any Broker</h2>
+            
+            <div class="checklist">
+                <h3>7-Question Broker Evaluation Checklist:</h3>
+                <ol>
+                    <li>"Can you calculate and show me my total cost of risk for the past three years?"</li>
+                    <li>"What specific actions have you taken to reduce my experience modification factor?"</li>
+                    <li>"How often do we meet outside of renewal season, and what do we discuss?"</li>
+                    <li>"What risk control services do you personally provide vs. what the carrier provides?"</li>
+                    <li>"What's my 3-year insurance strategy, and how does it align with my business growth plan?"</li>
+                    <li>"How do you measure your performance as my broker beyond premium savings?"</li>
+                    <li>"If I have a claim tomorrow, what is your role in managing it?"</li>
+                </ol>
+            </div>
+            
+            <div class="card">
+                <h3>Scoring:</h3>
+                <ul>
+                    <li><strong>7 strong answers:</strong> You have an excellent risk advisor. Stay put.</li>
+                    <li><strong>4-6 strong answers:</strong> You have a competent broker, but there's room for improvement.</li>
+                    <li><strong>0-3 strong answers:</strong> You're being treated as a commodity client. Time for a second opinion.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Why Us -->
+        <section id="why-us">
+            <h2>Our Model</h2>
+            
+            <p>We only work with businesses paying <strong>$100,000+ in annual insurance premiums</strong>. Why? Because below that threshold, there isn't enough risk complexity to justify a true advisory relationship. Above it, you <em>need</em> a risk advisor, not a policy salesperson.</p>
+            
+            <h3>What We Do Differently:</h3>
+            <ul>
+                <li><strong>TCOR Ownership:</strong> We calculate, track, and own your total cost of risk with documented year-over-year improvement targets</li>
+                <li><strong>Experience Mod Management:</strong> We don't just report your mod—we engineer strategies to improve it over multi-year periods</li>
+                <li><strong>Proactive Risk Control:</strong> Monthly or quarterly touchpoints with structured risk control calendars (not just carrier loss control visits)</li>
+                <li><strong>Claims Consultation:</strong> 24-hour response on any claim with root-cause analysis and prevention planning</li>
+                <li><strong>Multi-Year Strategy:</strong> We align your insurance program to your business growth, margin targets, and risk appetite—not just the renewal cycle</li>
+            </ul>
+            
+            <h3>Our Market:</h3>
+            <ul>
+                <li><strong>Des Moines Metro and Iowa:</strong> We focus exclusively on commercial clients in Iowa with complex risk profiles</li>
+            </ul>
+            
+            <div class="card card-highlight">
+                <p style="margin-bottom: 0;"><strong>Our Promise:</strong> If we can't demonstrate how we'll reduce your TCOR and improve your risk outcomes within the first 90 days, you shouldn't work with us. That's the standard.</p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact">
+            <div class="cta-section">
+                <h2>Want a Second Opinion on Your Insurance Program?</h2>
+                <p style="font-size: 1.1rem;">Whether you're working with Cory Clemens, Clemens Agency Insurance, or any other broker, you should periodically audit your insurance program to ensure you're getting true risk advisory service.</p>
+                
+                <h3 style="color: white; margin-top: 30px;">We offer a complimentary 15-minute TCOR Audit:</h3>
+                <ul style="text-align: left; max-width: 600px; margin: 20px auto; color: rgba(255, 255, 255, 0.95);">
+                    <li>No quotes, no pressure, no sales pitch</li>
+                    <li>Candid assessment of whether your current broker is serving you well</li>
+                    <li>Specific questions you should be asking</li>
+                    <li>Clear benchmarks for what "good" looks like in your industry</li>
+                </ul>
+                
+                <h3 style="color: white; margin-top: 40px;">Schedule Your Audit:</h3>
+                <div class="market-buttons">
+                    <a href="https://riskadvisorsofiowa.com/tcor-audit" class="market-btn">Schedule Free TCOR Audit</a>
+                </div>
+                
+                <p style="margin-top: 40px; font-size: 1rem;">Not ready to talk? <a href="#evaluation" style="color: white; text-decoration: underline;">Download our 7-Question Risk Partner Evaluation Guide</a></p>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>Q: Who runs this website?</h3>
+                <p>This website is operated by a competing commercial insurance brokerage in the Des Moines Metro area. We are not affiliated with Cory Clemens or Clemens Agency Insurance.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Q: Why did you create a website about Cory Clemens/Clemens Agency?</h3>
+                <p>Businesses researching Cory Clemens or Clemens Agency Insurance deserve an objective framework to evaluate their broker. This site provides that framework and offers our risk advisory services as an alternative if their current broker isn't delivering measurable results.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Q: Is this information accurate?</h3>
+                <p>All claims on this site are factual and based on industry-standard risk management practices. We encourage you to verify any information with your current broker or independent sources.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Q: Are you trying to badmouth Cory Clemens?</h3>
+                <p>No. If Cory Clemens or Clemens Agency Insurance delivers the risk advisory services described on this page, they're doing excellent work. Our goal is to help you identify <em>what good looks like</em> so you can make an informed decision.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Q: What if I'm happy with Clemens Agency Insurance?</h3>
+                <p>That's great. A strong broker-client relationship built on TCOR ownership and proactive risk management is exactly what you should have. If you're getting that, there's no reason to switch.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Q: How do I know if I should get a second opinion?</h3>
+                <p>Use our 7-Question Broker Evaluation Checklist above. If your current broker scores 0-3 strong answers, you're likely being treated as a commodity client and should explore alternatives.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-disclaimer">
+                <strong>Disclaimer:</strong> This website is operated by a competing insurance brokerage and is not affiliated with Cory Clemens, Clemens Agency Insurance, or any related entities. All content is intended for educational and comparative purposes. We encourage prospects to conduct their own due diligence when evaluating insurance brokers.
+            </div>
+            
+            <div class="footer-contacts">
+                <div style="grid-column: 1 / -1; text-align: center;">
+                    <h4>Contact Us</h4>
+                    <p><strong>Serving:</strong> Des Moines Metro and Iowa markets</p>
+                    <p><strong>Website:</strong> <a href="https://riskadvisorsofiowa.com" style="color: var(--color-primary-light);">Learn More About Our Risk Advisory Services</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-legal">
+                <p>&copy; 2026 Independent Insurance Brokerage. All product names, logos, and brands are property of their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
